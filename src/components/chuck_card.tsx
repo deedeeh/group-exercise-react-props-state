@@ -1,11 +1,11 @@
-import ChuckImage from './assets/chuck_norris.jpg';
+import ChuckImage from '../assets/chuck_norris.jpg';
 
-const ChuckCard = () =>
+const ChuckCard: React.FC<{message: string}> = (props) =>
 
         <>
-            <h2>{ }</h2>
+            <h2>{ props.message }</h2>
 
-            <img src={ 'Chuck image here!'} alt='A handsome man' /> 
+            <img src={ ChuckImage } alt='A handsome man' /> 
         </>
 
 
