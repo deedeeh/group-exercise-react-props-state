@@ -1,8 +1,13 @@
-const ChuckInfo = () => 
-        <>
-            <p>Number of Whales Saved: </p>
+interface IChuckInfo {
+    numOfWhalesSaved: number,
+    numOfRoundHouseKicks: number
+}
 
-            <p>Number of Round House Kicks (in the last day): </p>
+const ChuckInfo: React.FC<IChuckInfo> = (props) => 
+        <>
+            <p>Number of Whales Saved: {props.numOfWhalesSaved}</p>
+
+            <p>Number of Round House Kicks (in the last day): {props.numOfRoundHouseKicks}</p>
         </>
     
 
