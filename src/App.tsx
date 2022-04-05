@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import ChuckNorrisCard from './components/chuck_card';
 import ChuckInfo from './components/chuck_info';
 import Joke from './joke';
+import ChuckJokes from './components/chuck_jokes';
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
       />
 
       <h2>Jokes: </h2>
+      {jokes.map(joke => <ChuckJokes id={joke.id} joke={joke.joke} />)}
 
     </div>
   );
